@@ -1,0 +1,19 @@
+.prose-helper h2 {
+  @apply font-serif text-2xl text-slate-900;
+}
+
+.prose-helper h3 {
+  @apply font-semibold text-slate-800;
+}
+
+.prose-helper p {
+  @apply text-base text-slate-600;
+}
+
+.prose-helper ol {
+  @apply list-decimal pl-6 text-slate-600;
+}
+
+.prose-helper ul {
+  @apply list-disc pl-6 text-slate-600;
+}
