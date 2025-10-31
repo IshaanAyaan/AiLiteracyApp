@@ -6,7 +6,7 @@ export async function callGemini(prompt: string): Promise<string> {
     throw new Error('GEMINI_API_KEY is not set.');
   }
 
-  const configuredModel = process.env.GEMINI_MODEL ?? 'models/gemini-1.5-flash';
+  const configuredModel = process.env.GEMINI_MODEL ?? 'models/gemini-2.5-flash';
   const modelPath = configuredModel.startsWith('models/') ? configuredModel : `models/${configuredModel}`;
   const url = `${API_BASE}/${modelPath}:generateContent?key=${apiKey}`;
 
